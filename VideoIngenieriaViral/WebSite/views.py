@@ -10,4 +10,4 @@ from django.views.generic import (
 
 
 def home_view(request):
-    return render(request, "WebSite/home.html")
+    return render(request, "WebSite/pages/index.html")

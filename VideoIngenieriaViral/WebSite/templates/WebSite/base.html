@@ -1,11 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>{% block title %} base.html {% endblock title %}</title>
+  <link rel="stylesheet" href="{% static 'WebSite/css/styles_base.css' %}" />
+  {% block styles %} {% endblock styles %}
 </head>
 <body>
+  <header>
+    <hr class="line-pages">
+    <div class="header-containe">
+      <div class="logo-container">
+        <img src="../../static/WebSite/assets/img/Logo VIV - Sin Vectorizar.png" alt="Logo VideoIngenieriaViral" class="logo"/>
+      </div>
+      {% block h1 %} {% endblock h1 %}
+    </div>
+  </header>
   
 </body>
 </html>
