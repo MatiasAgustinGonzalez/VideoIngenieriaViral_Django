@@ -23,7 +23,7 @@
     <nav>
       <ul class="nav-bar">
         <li><a href="#"><img src="../../static/WebSite/assets/img/Logo Home.png" alt="" class="img-nav"/>INICIO</a></li>
-        <li><a href="../WebSite/pages/nosotros.html"><img src="../../static/WebSite/assets/img/Logo About.png" alt="" class="img-nav"/>NOSOTROS</a></li>
+        <li><a href="../../static/WebSite/pages/nosotros.html"><img src="../../static/WebSite/assets/img/Logo About.png" alt="" class="img-nav"/>NOSOTROS</a></li>
         <li><a href="./pages/blog.html"><img src="../../static/WebSite/assets/img/Logo Texto.png" alt="" class="img-nav"/>BLOG</a></li>
         <li><a href="./pages/canal.html"><img src="../../static/WebSite/assets/img/Logo YouTube Blanco y Negro.png" alt="" class="img-nav"/>CANAL</a></li>
         <li><a href="./pages/contacto.html"><img src="../../static/WebSite/assets/img//Logo Contacto.png" alt="" class="img-nav"/>CONTACTO</a></li>
@@ -32,5 +32,35 @@
     </nav>
     <!--                                   -->
   </header>
+  <!--     Espacio para el cuerpo        -->
+  <main>{% block content %} {% endblock content %}</main>
+  <!--                                   -->
+  <!--    Espacio para el pie de pagina    -->
+  <footer>
+    <div class="redes-container">
+      <p>Nuestras Redes</p>
+      <ul class="redes-footer">
+        <li><a href=""><img src="../../static/WebSite/assets/img/Logo Instagram Original.png" alt="Logo Instagram"></a></li>
+        <li><a href=""><img src="../../static/WebSite/assets/img/Logo LinkedIn Original.png" alt="Logo LinkedIn"></a></li>
+        <li><a href=""><img src="../../static/WebSite/assets/img/Logo YouTube Original.png" alt="Logo YouTube" class="img-footerYoutube"></a></li>
+      </ul>
+    </div>
+    <div class="contacto-container">
+      <p>Contacto</p>
+      <ul>
+        <li>nombreapellido@gmail.com</li>
+        <li>Córdoba, Argentina</li>
+      </ul>
+    </div>
+    <div class="suscripcion-container">
+      <p>Recibe Información Útil</p>
+      <div class="boton-container">
+        <p>Ingrese su email</p>
+        <button>Suscribite</button>
+      </div>
+    </div>
+  </footer>
+  <hr class="line-pages">
+  <!--                                   -->
 </body>
 </html>
