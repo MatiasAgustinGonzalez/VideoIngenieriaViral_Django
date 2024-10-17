@@ -1,0 +1,45 @@
+.card-information{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.25rem;
+}
+.card-container{
+  width: 70%;
+  height: 15rem;
+  border: 3px solid #EFFAFC;
+  border-radius: 20px;
+  background-image: url("../assets/img/Img_industria.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+.card-container h2, .card-container p{
+  padding: 10px;
+  opacity: 1;
+}
+
+.card-redes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: .1875rem;
+  width: 115%;
+  height: 15rem;
+  border: 3px solid #EFFAFC;
+  border-radius: 20px;
+  background-image: url("../assets/img/Img_Compu.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  text-align:left;
+}
+.card-redes li{
+  list-style: none;
+}
+.card-redes li a{
+  text-decoration: none;
+  color:red;
+}
