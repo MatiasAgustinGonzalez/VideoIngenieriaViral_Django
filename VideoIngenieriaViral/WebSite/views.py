@@ -31,7 +31,11 @@ def home_view(request):
 #   CREAR todos los registros
 #--------------------------------
 
-
+class TarjetaInicioCreateView(CreateView):
+    model = TarjetaInicio
+    template_name = "WebSite/forms/form_create_cards.html"
+    fields = ['titulo', 'cuerpo']
+    success_url = reverse_lazy("list_cards")
 
 
 

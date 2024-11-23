@@ -1,0 +1,26 @@
+{% extends 'WebSite/base.html' %}
+{% load static %}
+
+{% block title %}Create Form{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'WebSite/css/styles_base.css' %}"/>
+<link rel="stylesheet" href="{% static 'WebSite/css/styles_index.css' %}"/>
+{% endblock %}
+
+<!--     Espacio para el titulo        -->
+{% block h1 %}
+<h1 class="header-title">Creación Tarjeta Inicio</h1>
+{% endblock %}
+<!--                                   -->
+
+<!--     Espacio para el cuerpo        -->
+{% block content %}
+<div class="form-container">
+  <form method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit">Guardar</button>
+  </form>
+</div>
+{% endblock %}
+<!--                                   -->
