@@ -13,7 +13,7 @@
     <hr class="line-pages">
     <div class="header-containe">
       <div class="logo-container">
-        <img src="../../static/WebSite/assets/img/Logo VIV - Sin Vectorizar.png" alt="Logo VideoIngenieriaViral" class="logo"/>
+        <img src="{% static 'WebSite/assets/img/Logo VIV - Sin Vectorizar.png' %}" alt="Logo VideoIngenieriaViral" class="logo"/>
       </div>
       <!--     Espacio para el titulo        -->
       {% block h1 %} {% endblock h1 %}
@@ -22,12 +22,12 @@
     <!--     Espacio para el navegador     -->
     <nav>
       <ul class="nav-bar">
-        <li><a href="#"><img src="../../static/WebSite/assets/img/Logo Home.png" alt="" class="img-nav"/>INICIO</a></li>
-        <li><a href="../../static/WebSite/pages/nosotros.html"><img src="../../static/WebSite/assets/img/Logo About.png" alt="" class="img-nav"/>NOSOTROS</a></li>
-        <li><a href="./pages/blog.html"><img src="../../static/WebSite/assets/img/Logo Texto.png" alt="" class="img-nav"/>BLOG</a></li>
-        <li><a href="./pages/canal.html"><img src="../../static/WebSite/assets/img/Logo YouTube Blanco y Negro.png" alt="" class="img-nav"/>CANAL</a></li>
-        <li><a href="./pages/contacto.html"><img src="../../static/WebSite/assets/img//Logo Contacto.png" alt="" class="img-nav"/>CONTACTO</a></li>
-        <li><a href="#"><img src="../../static/WebSite/assets/img/Logo Usuario Avatar.png" alt="Logo Usuario" class="img-nav-user"></a></li>
+        <li><a href="{% url 'WebSite_home' %}"><img src="{% static 'WebSite/assets/img/Logo Home.png' %}" alt="" class="img-nav"/>INICIO</a></li>
+        <li><a href=""><img src="{% static 'WebSite/assets/img/Logo About.png' %}" alt="" class="img-nav"/>NOSOTROS</a></li>
+        <li><a href=""><img src="{% static 'WebSite/assets/img/Logo Texto.png' %}" alt="" class="img-nav"/>BLOG</a></li>
+        <li><a href=""><img src="{% static 'WebSite/assets/img/Logo YouTube Blanco y Negro.png' %}" alt="" class="img-nav"/>CANAL</a></li>
+        <li><a href="{% url 'create_cards-index' %}"><img src="{% static 'WebSite/assets/img//Logo Contacto.png' %}" alt="" class="img-nav"/>CONTACTO</a></li>
+        <li><a href="#"><img src="{% static 'WebSite/assets/img/Logo Usuario Avatar.png' %}" alt="Logo Usuario" class="img-nav-user"></a></li>
       </ul>
     </nav>
     <!--                                   -->
@@ -40,9 +40,9 @@
     <div class="redes-container">
       <p>Nuestras Redes</p>
       <ul class="redes-footer">
-        <li><a href=""><img src="../../static/WebSite/assets/img/Logo Instagram Original.png" alt="Logo Instagram"></a></li>
-        <li><a href=""><img src="../../static/WebSite/assets/img/Logo LinkedIn Original.png" alt="Logo LinkedIn"></a></li>
-        <li><a href=""><img src="../../static/WebSite/assets/img/Logo YouTube Original.png" alt="Logo YouTube" class="img-footerYoutube"></a></li>
+        <li><a href=""><img src="{% static 'WebSite/assets/img/Logo Instagram Original.png' %}" alt="Logo Instagram"></a></li>
+        <li><a href=""><img src="{% static 'WebSite/assets/img/Logo LinkedIn Original.png' %}" alt="Logo LinkedIn"></a></li>
+        <li><a href=""><img src="{% static 'WebSite/assets/img/Logo YouTube Original.png' %}" alt="Logo YouTube" class="img-footerYoutube"></a></li>
       </ul>
     </div>
     <div class="contacto-container">

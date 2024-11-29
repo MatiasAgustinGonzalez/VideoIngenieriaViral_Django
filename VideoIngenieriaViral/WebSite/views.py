@@ -33,7 +33,7 @@ def home_view(request):
 
 class TarjetaInicioCreateView(CreateView):
     model = TarjetaInicio
-    template_name = "WebSite/forms/form_create_cards.html"
+    template_name = "WebSite/pages/forms/form_create_cards.html"
     fields = ['titulo', 'cuerpo']
     success_url = reverse_lazy("list_cards")
 
